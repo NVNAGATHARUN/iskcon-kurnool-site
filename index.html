@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ISKCON Kurnool | Sri Sri Jagannath Mandir</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Mahamantra marquee -->
+  <div class="mantra-bar">
+    <div class="mantra-track">
+      <span>HARE KRISHNA HARE KRISHNA &nbsp; KRISHNA KRISHNA HARE HARE &nbsp; HARE RAMA HARE RAMA &nbsp; RAMA RAMA HARE HARE &nbsp; • &nbsp;</span>
+      <span>HARE KRISHNA HARE KRISHNA &nbsp; KRISHNA KRISHNA HARE HARE &nbsp; HARE RAMA HARE RAMA &nbsp; RAMA RAMA HARE HARE &nbsp; • &nbsp;</span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <img src="assets/images/iskcon_logo.jpeg" alt="ISKCON Kurnool Logo"
+             style="height:60px;width:auto;margin-right:8px;margin-top:4px;display:block;">
+        <span data-i18n="nav.brandName">ISKCON KURNOOL</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav.about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="deities.html" data-i18n="nav.deities">Deities</a></li>
+          <li class="nav-item"><a class="nav-link" href="visit.html" data-i18n="nav.visit">Visit</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html" data-i18n="nav.programs">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="calendar.html" data-i18n="nav.calendar">Calendar</a></li>
+          <li class="nav-item"><a class="nav-link" href="donate.html" data-i18n="nav.donate">Donate</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+
+          <!-- Desktop language buttons -->
+          <div class="d-none d-lg-flex gap-2 ms-auto me-3">
+            <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('en')" title="English" style="font-weight:600;">EN</button>
+            <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('te')" title="Telugu" style="font-weight:600;">TE</button>
+            <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('hi')" title="Hindi" style="font-weight:600;">HI</button>
+          </div>
+
+          <!-- Mobile language buttons -->
+          <li class="nav-item d-lg-none mt-2">
+            <div class="d-flex gap-2 justify-content-center">
+              <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('en')" style="font-weight:600;">EN</button>
+              <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('te')" style="font-weight:600;">TE</button>
+              <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('hi')" style="font-weight:600;">HI</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section fade-in-up">
+    <div class="container text-center position-relative z-1">
+      <h1 class="display-3 fw-bold mb-3" data-i18n="hero.title">Hare Krishna!</h1>
+      <p class="lead mb-4 fw-300" data-i18n="hero.subtitle">
+        Welcome to ISKCON Kurnool – Sri Sri Jagannath Mandir
+      </p>
+      <p class="mb-5" style="font-size:1.15rem;max-width:650px;margin:0 auto;" data-i18n="hero.description">
+        A spiritual sanctuary dedicated to the teachings of His Divine Grace A.C. Bhaktivedanta Swami Prabhupada,
+        spreading Krishna consciousness through kirtan, philosophy and service.
+      </p>
+      <div class="d-flex gap-3 justify-content-center flex-wrap">
+        <a href="visit.html" class="btn btn-light btn-lg">
+          <i class="fas fa-map-location-dot"></i> <span data-i18n="hero.planVisitBtn">Plan Your Visit</span>
+        </a>
+        <a href="donate.html" class="btn btn-outline-light btn-lg">
+          <i class="fas fa-heart"></i> <span data-i18n="hero.supportSevaBtn">Support Seva</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Krishna section -->
+  <section id="my-krishna"
+           style="max-width:600px;margin:2rem auto;padding:1rem;border:1px solid #ddd;border-radius:8px;">
+    <h2>🕉️ My Krishna – Ask a Question</h2>
+    <p>Ask any question, and My Krishna will answer based on Bhagavad Gita.</p>
+
+    <textarea id="question" rows="4" style="width:100%;padding:0.5rem;"
+              placeholder="Type your question to Krishna..."></textarea>
+
+    <button id="askBtn" style="margin-top:0.5rem;padding:0.5rem 1rem;">
+      Ask My Krishna
+    </button>
+
+    <div id="answerBox" style="margin-top:1rem;display:none;">
+      <h3>Answer</h3>
+      <p id="answerText"></p>
+
+      <h4>References</h4>
+      <ul id="refsList"></ul>
+    </div>
+  </section>
+
+  <!-- Quick Links Cards -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5" data-i18n="explore.title">Explore ISKCON Kurnool</h2>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <div class="mb-3">
+                <i class="fas fa-calendar-days" style="font-size:2.5rem;color:#FF9933;"></i>
+              </div>
+              <h5 class="card-title fw-bold" data-i18n="explore.card1.title">Darshan & Timings</h5>
+              <p class="card-text" data-i18n="explore.card1.text">
+                Experience the daily darshan, arati schedule, and Sunday feast timings at our sacred temple.
+              </p>
+              <a href="visit.html" class="btn btn-primary btn-sm">
+                <i class="fas fa-clock"></i> <span data-i18n="explore.card1.button">View Timings</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <div class="mb-3">
+                <i class="fas fa-book-open" style="font-size:2.5rem;color:#FF6B35;"></i>
+              </div>
+              <h5 class="card-title fw-bold" data-i18n="explore.card2.title">Programs & Classes</h5>
+              <p class="card-text" data-i18n="explore.card2.text">
+                Join Bhagavad-gita classes, youth programs, nama-hatta and festival celebrations year-round.
+              </p>
+              <a href="programs.html" class="btn btn-primary btn-sm">
+                <i class="fas fa-graduation-cap"></i> <span data-i18n="explore.card2.button">Explore Programs</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <div class="mb-3">
+                <i class="fas fa-hands-praying" style="font-size:2.5rem;color:#FFD700;"></i>
+              </div>
+              <h5 class="card-title fw-bold" data-i18n="explore.card3.title">Seva & Donations</h5>
+              <p class="card-text" data-i18n="explore.card3.text">
+                Participate in deity seva, prasadam distribution and temple maintenance through your support.
+              </p>
+              <a href="donate.html" class="btn btn-primary btn-sm">
+                <i class="fas fa-gift"></i> <span data-i18n="explore.card3.button">Donate Now</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-4" data-i18n="aboutPreview.title">About ISKCON Kurnool</h2>
+          <p class="mb-3" data-i18n="aboutPreview.text1">
+            ISKCON Kurnool is a vibrant center of the International Society for Krishna Consciousness,
+            dedicated to spreading the chanting of the holy names and the teachings of Bhagavad-gita and
+            Srimad-Bhagavatam in the spiritual city of Kurnool.
+          </p>
+          <p class="mb-4" data-i18n="aboutPreview.text2">
+            Our temple conducts regular programs, festivals and outreach activities for devotees, students,
+            families and spiritual seekers. Whether you are beginning your spiritual journey or are an
+            experienced practitioner, there is a place for you at ISKCON Kurnool.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="about.html" class="btn btn-outline-primary">
+              <i class="fas fa-arrow-right"></i> <span data-i18n="aboutPreview.readMoreBtn">Read More</span>
+            </a>
+            <a href="deities.html" class="btn btn-primary">
+              <i class="fas fa-gopuram"></i> <span data-i18n="aboutPreview.meetDeitiesBtn">Meet the Deities</span>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/"
+                    title="ISKCON Kurnool" allowfullscreen loading="lazy"
+                    style="border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.15);"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Visit Section -->
+  <section class="py-5" style="background:linear-gradient(135deg,#1a1f4d 0%,#2b3a67 100%);">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5 text-white" data-i18n="whyVisit.title"
+          style="text-shadow:2px 2px 4px rgba(0,0,0,0.3);">
+        Why Visit ISKCON Kurnool?
+      </h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100 border-0 shadow-lg">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-hands-praying" style="font-size:3rem;color:#FFD700;"></i>
+              </div>
+              <h5 class="fw-bold mb-2" style="color:#1a1f4d;" data-i18n="whyVisit.card1.title">Spiritual Growth</h5>
+              <p style="color:#495057;" data-i18n="whyVisit.card1.text">
+                Experience personal spiritual development through deity worship and philosophical teachings.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100 border-0 shadow-lg">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-utensils" style="font-size:3rem;color:#FFD700;"></i>
+              </div>
+              <h5 class="fw-bold mb-2" style="color:#1a1f4d;" data-i18n="whyVisit.card2.title">Prasadam</h5>
+              <p style="color:#495057;" data-i18n="whyVisit.card2.text">
+                Enjoy delicious vegetarian food sanctified through offerings to Krishna.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100 border-0 shadow-lg">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-people-group" style="font-size:3rem;color:#FFD700;"></i>
+              </div>
+              <h5 class="fw-bold mb-2" style="color:#1a1f4d;" data-i18n="whyVisit.card3.title">Community</h5>
+              <p style="color:#495057;" data-i18n="whyVisit.card3.text">
+                Connect with a warm community of devotees across all age groups and backgrounds.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card text-center h-100 border-0 shadow-lg">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-music" style="font-size:3rem;color:#FFD700;"></i>
+              </div>
+              <h5 class="fw-bold mb-2" style="color:#1a1f4d;" data-i18n="whyVisit.card4.title">Kirtan & Music</h5>
+              <p style="color:#495057;" data-i18n="whyVisit.card4.text">
+                Participate in uplifting kirtans and devotional music that touches the soul.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sunday Feast CTA -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-3" data-i18n="sunday.title">Join us this Sunday</h2>
+      <p class="mb-4 lead" data-i18n="sunday.text">
+        Experience the Sunday Feast – an evening of kirtan, pravachan, arati and sumptuous Krishna prasadam
+        in the association of devotees. All are welcome!
+      </p>
+      <div class="d-flex gap-3 justify-content-center flex-wrap">
+        <a href="visit.html" class="btn btn-primary btn-lg">
+          <i class="fas fa-calendar-check"></i> <span data-i18n="sunday.viewScheduleBtn">View Schedule</span>
+        </a>
+        <a href="contact.html" class="btn btn-outline-primary btn-lg">
+          <i class="fas fa-phone"></i> <span data-i18n="sunday.getDirectionsBtn">Get Directions</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Updates -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5" data-i18n="updates.title">Latest Updates</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <small class="text-muted">
+                <i class="fas fa-calendar"></i>
+                <span data-i18n="updates.card1.date">January 2026</span>
+              </small>
+              <h5 class="card-title fw-bold mt-2" data-i18n="updates.card1.title">Upcoming Festivals</h5>
+              <p class="card-text" data-i18n="updates.card1.text">
+                Stay tuned for Vasanta Panchami and other spiritual celebrations coming soon at the temple.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <small class="text-muted">
+                <i class="fas fa-calendar"></i>
+                <span data-i18n="updates.card2.date">Weekly</span>
+              </small>
+              <h5 class="card-title fw-bold mt-2" data-i18n="updates.card2.title">Youth Satsang</h5>
+              <p class="card-text" data-i18n="updates.card2.text">
+                College and school students gather for inspiring discussions, kirtan and prasadam every Saturday.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <small class="text-muted">
+                <i class="fas fa-calendar"></i>
+                <span data-i18n="updates.card3.date">Daily</span>
+              </small>
+              <h5 class="card-title fw-bold mt-2" data-i18n="updates.card3.title">Morning Arati</h5>
+              <p class="card-text" data-i18n="updates.card3.text">
+                Start your day with the early morning mangala arati at 5:00 AM. All devotees welcome!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Banner -->
+  <section class="py-5" style="background:linear-gradient(135deg,#1a1f4d 0%,#FF9933 100%);">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-3" style="color:#FFD700;text-shadow:3px 3px 8px rgba(0,0,0,0.9);" data-i18n="cta.title">
+        Ready to Experience Krishna Consciousness?
+      </h2>
+      <p class="mb-4" style="color:#FFFFFF;text-shadow:2px 2px 6px rgba(0,0,0,0.9);font-size:1.3rem;font-weight:500;line-height:1.8;"
+         data-i18n="cta.text">
+        Visit our temple, join our programs, or connect with us through any means.
+        We are here to serve you on your spiritual journey.
+      </p>
+      <a href="contact.html" class="btn btn-light btn-lg">
+        <i class="fas fa-envelope"></i> <span data-i18n="cta.button">Get in Touch</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark text-light">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3" data-i18n="footer.title">ISKCON Kurnool</h5>
+          <p class="mb-1"><strong data-i18n="footer.subtitle">Sri Sri Jagannath Mandir</strong></p>
+          <p class="mb-1" data-i18n="footer.address1">Bhageerathi Complex, 2nd Floor</p>
+          <p class="mb-1" data-i18n="footer.address2">Park Road, Kurnool</p>
+          <p class="mb-3" data-i18n="footer.address3">Andhra Pradesh, India</p>
+          <p class="mb-0"><strong data-i18n="footer.phoneLabel">Phone:</strong> +91 93981 26877</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3" data-i18n="footer.quickLinks">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="visit.html" class="text-decoration-none text-light" data-i18n="footer.link1">Visit & Timings</a></li>
+            <li class="mb-2"><a href="programs.html" class="text-decoration-none text-light" data-i18n="footer.link2">Programs</a></li>
+            <li class="mb-2"><a href="donate.html" class="text-decoration-none text-light" data-i18n="footer.link3">Donate</a></li>
+            <li class="mb-2"><a href="contact.html" class="text-decoration-none text-light" data-i18n="footer.link4">Contact Us</a></li>
+            <li><a href="gallery.html" class="text-decoration-none text-light" data-i18n="footer.link5">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3" data-i18n="footer.connect">Connect With Us</h5>
+          <p class="mb-3" data-i18n="footer.followText">Follow us on social media for daily darshan and updates:</p>
+          <div class="d-flex gap-3">
+            <a href="https://www.youtube.com/@iskconkurnool" class="text-light fs-5" title="YouTube" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/iskcon_kurnool/" class="text-light fs-5" title="Instagram" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/IskconKurnool" class="text-light fs-5" title="Facebook" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/919398126877" class="text-light fs-5" title="WhatsApp" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="bg-light">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="mb-0" data-i18n="footer.copyright">
+            © <span id="year"></span> ISKCON Kurnool – International Society for Krishna Consciousness
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <small data-i18n="footer.dedication">
+            Dedicated to the teachings of His Divine Grace A.C. Bhaktivedanta Swami Prabhupada
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Multilingual script -->
+  <script>
+    const defaultLang = 'en';
+    let translationsCache = {};
+
+    async function loadTranslations(lang) {
+      try {
+        console.log('Loading language:', lang);
+
+        if (translationsCache[lang]) {
+          applyTranslations(translationsCache[lang]);
+          localStorage.setItem('lang', lang);
+          console.log('Translations applied from cache:', lang);
+          return;
+        }
+
+        const response = await fetch(`assets/lang/${lang}.json`);
+        if (!response.ok) {
+          console.error(`Failed to load ${lang}.json - Status: ${response.status}`);
+          alert(`Language file not found: assets/lang/${lang}.json`);
+          return;
+        }
+
+        const translations = await response.json();
+        translationsCache[lang] = translations;
+
+        applyTranslations(translations);
+        localStorage.setItem('lang', lang);
+
+        console.log(`✅ Successfully loaded and applied ${lang} translations`);
+      } catch (e) {
+        console.error('Translation load error:', e);
+        alert('Error loading translations. Check console for details.');
+      }
+    }
+
+    function applyTranslations(translations) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const text = translations[key];
+
+        if (!text) {
+          console.warn(`Missing translation key: ${key}`);
+          return;
+        }
+
+        const tag = el.tagName.toLowerCase();
+        if (tag === 'input' || tag === 'textarea') {
+          el.placeholder = text;
+        } else {
+          el.textContent = text;
+        }
+      });
+    }
+
+    function changeLanguage(lang) {
+      console.log('changeLanguage called with:', lang);
+      loadTranslations(lang);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const saved = localStorage.getItem('lang') || defaultLang;
+      console.log('Page loaded. Saved language:', saved);
+      loadTranslations(saved);
+    });
+  </script>
+
+  <!-- My Krishna frontend JS -->
+  <script>
+    const API_URL = "http://127.0.0.1:8000/ask";
+
+    const questionEl = document.getElementById("question");
+    const askBtn = document.getElementById("askBtn");
+    const answerBox = document.getElementById("answerBox");
+    const answerText = document.getElementById("answerText");
+    const refsList = document.getElementById("refsList");
+
+    askBtn.addEventListener("click", async () => {
+      const question = questionEl.value.trim();
+      if (!question) {
+        alert("Please type a question.");
+        return;
+      }
+
+      answerBox.style.display = "block";
+      answerText.textContent = "Thinking with Krishna's guidance...";
+      refsList.innerHTML = "";
+
+      try {
+        const response = await fetch(API_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ question: question })
+        });
+
+        if (!response.ok) {
+          throw new Error("Server error: " + response.status);
+        }
+
+        const data = await response.json();
+        answerText.textContent = data.answer;
+
+        refsList.innerHTML = "";
+
+        (data.references || []).forEach((ref, idx) => {
+          const li = document.createElement("li");
+          const link = data.reference_links && data.reference_links[idx];
+
+          if (link) {
+            const a = document.createElement("a");
+            a.href = link;
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+            a.textContent = ref;     // e.g. "BG 2.47"
+            li.appendChild(a);
+          } else {
+            li.textContent = ref;
+          }
+
+          refsList.appendChild(li);
+        });
+      } catch (err) {
+        console.error(err);
+        answerText.textContent =
+          "Sorry, there was a problem contacting My Krishna backend.";
+      }
+    });
+  </script>
+</body>
+</html>

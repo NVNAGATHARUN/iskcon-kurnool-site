@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Visit & Timings | ISKCON Kurnool</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- Mahamantra marquee -->
+  <div class="mantra-bar">
+    <div class="mantra-track">
+      <span>HARE KRISHNA HARE KRISHNA &nbsp; KRISHNA KRISHNA HARE HARE &nbsp; HARE RAMA HARE RAMA &nbsp; RAMA RAMA HARE HARE &nbsp; • &nbsp;</span>
+      <span>HARE KRISHNA HARE KRISHNA &nbsp; KRISHNA KRISHNA HARE HARE &nbsp; HARE RAMA HARE RAMA &nbsp; RAMA RAMA HARE HARE &nbsp; • &nbsp;</span>
+    </div>
+  </div>
+   <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <img src="assets/images/iskcon_logo.jpeg" alt="ISKCON Kurnool Logo" style="height:60px;width:auto;margin-right:8px;margin-top:4px;display:block;">
+        <span data-i18n="nav.brandName">ISKCON KURNOOL</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav.about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="deities.html" data-i18n="nav.deities">Deities</a></li>
+          <li class="nav-item"><a class="nav-link" href="visit.html" data-i18n="nav.visit">Visit</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html" data-i18n="nav.programs">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="calendar.html" data-i18n="nav.calendar">Calendar</a></li>
+          <li class="nav-item"><a class="nav-link" href="donate.html" data-i18n="nav.donate">Donate</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+
+      <!-- Language Buttons (Always Visible - Right Side) -->
+      <div class="d-none d-lg-flex gap-2 ms-auto me-3">
+        <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('en')" title="English" style="font-weight: 600;">EN</button>
+        <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('te')" title="Telugu" style="font-weight: 600;">TE</button>
+        <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('hi')" title="Hindi" style="font-weight: 600;">HI</button>
+      </div>
+
+          <!-- Language Buttons for Mobile (in hamburger menu) -->
+          <li class="nav-item d-lg-none mt-2">
+            <div class="d-flex gap-2 justify-content-center">
+              <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('en')" style="font-weight: 600;">EN</button>
+              <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('te')" style="font-weight: 600;">TE</button>
+              <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('hi')" style="font-weight: 600;">HI</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <main class="py-5">
+    <div class="container py-4">
+      <!-- Page Title -->
+      <section class="mb-5 text-center">
+        <h1 class="fw-bold mb-3" data-i18n="visit.pageTitle">Visit ISKCON Kurnool</h1>
+        <p class="lead text-muted" data-i18n="visit.subtitle">Darshan Timings, Location & Visitor Information</p>
+      </section>
+
+      <!-- Address + Map Section -->
+      <section class="mb-5">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <h2 class="fw-bold mb-4">
+              <i class="fas fa-map-location-dot text-warning"></i> <span data-i18n="visit.templeAddress">Temple Address</span>
+            </h2>
+            <div class="card shadow-md border-0 mb-3">
+              <div class="card-body">
+                <p class="mb-1"><strong data-i18n="visit.templeName">ISKCON Kurnool</strong></p>
+                <p class="mb-1"><strong data-i18n="visit.deityName">Sri Sri Jagannath Mandir</strong></p>
+                <p class="mb-3" data-i18n="visit.addressFull">Bhageerathi Complex, 2nd Floor, Park Road, Kurnool, Andhra Pradesh, India</p>
+                <hr>
+                <p class="mb-1"><i class="fas fa-phone text-warning"></i> <strong data-i18n="visit.phoneLabel">Phone:</strong> +91 93981 26877</p>
+                <p class="mb-0"><i class="fas fa-envelope text-warning"></i> <strong data-i18n="visit.emailLabel">Email:</strong> info@iskconkurnool.org</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="fw-bold mb-4">
+              <i class="fas fa-location-pin text-warning"></i> <span data-i18n="visit.locationMap">Location Map</span>
+            </h2>
+            <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-md">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.5094296187854!2d78.04097517491161!3d15.82980058481552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb5e75916c304f3%3A0x18f16b94e775330d!2sISKCON%20Shri%20Jagannatha%20Swamy%20Temple!5e0!3m2!1sen!2sus!4v1768463720958!5m2!1sen!2sus"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Daily Darshan & Arati Timings -->
+      <section class="mb-5">
+        <h2 class="fw-bold mb-4">
+          <i class="fas fa-clock text-warning"></i> <span data-i18n="visit.timingsTitle">Daily Darshan & Arati Timings</span>
+        </h2>
+        <p class="mb-4 text-muted" data-i18n="visit.timingsNote">Please confirm exact timings with temple. Timings may vary on festivals.</p>
+        <div class="table-responsive">
+          <table class="table table-hover align-middle">
+            <thead class="table-dark">
+              <tr>
+                <th><i class="fas fa-om"></i> <span data-i18n="visit.table.service">Service</span></th>
+                <th><i class="fas fa-hourglass-end"></i> <span data-i18n="visit.table.time">Time</span></th>
+                <th><i class="fas fa-info-circle"></i> <span data-i18n="visit.table.notes">Notes</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong data-i18n="visit.mangalaArati">Mangala Arati</strong></td>
+                <td>05:00 AM – 05:30 AM</td>
+                <td><span class="badge bg-success" data-i18n="visit.earlyMorning">Early Morning</span></td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="visit.sringarDarshan">Sringar Darshan</strong></td>
+                <td>07:30 AM – 08:00 AM</td>
+                <td><span class="badge bg-info" data-i18n="visit.deityDecorated">Deity Decorated</span></td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="visit.guruPuja">Guru Puja & Kirtan</strong></td>
+                <td>08:00 AM – 08:30 AM</td>
+                <td><span class="badge bg-primary" data-i18n="visit.devotional">Devotional</span></td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="visit.bhagavatamClass">Bhagavatam Class</strong></td>
+                <td>08:30 AM – 09:15 AM</td>
+                <td><span class="badge bg-warning" data-i18n="visit.educational">Educational</span></td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="visit.rajBhoga">Raj Bhoga Arati</strong></td>
+                <td>12:30 PM – 01:00 PM</td>
+                <td><span class="badge bg-info" data-i18n="visit.midday">Midday</span></td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="visit.sandhyaArati">Sandhya Arati</strong></td>
+                <td>07:00 PM – 07:30 PM</td>
+                <td><span class="badge bg-secondary" data-i18n="visit.evening">Evening</span></td>
+              </tr>
+              <tr>
+                <td><strong data-i18n="visit.shayanaArati">Shayana Arati</strong></td>
+                <td>08:30 PM – 09:00 PM</td>
+                <td><span class="badge bg-dark" data-i18n="visit.nightRest">Night Rest</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- Sunday Feast Section -->
+      <section class="mb-5">
+        <div class="card border-0 shadow-md" style="border-left: 4px solid #FF9933;">
+          <div class="card-body">
+            <h2 class="fw-bold mb-3">
+              <i class="fas fa-utensils text-warning"></i> <span data-i18n="visit.sundayFeast.title">Sunday Feast Program</span>
+            </h2>
+            <p class="mb-3" data-i18n="visit.sundayFeast.description">
+              Every Sunday, ISKCON Kurnool conducts a special evening program featuring kirtan, discourse on Bhagavad-gita or Srimad-Bhagavatam, and delicious Krishna-prasadam. All are welcome!
+            </p>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="d-flex">
+                  <div class="me-3">
+                    <i class="fas fa-calendar-days text-warning" style="font-size: 1.5rem;"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold" data-i18n="visit.sundayFeast.dayLabel">Day</h6>
+                    <p class="mb-0" data-i18n="visit.sundayFeast.day">Every Sunday</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex">
+                  <div class="me-3">
+                    <i class="fas fa-clock text-warning" style="font-size: 1.5rem;"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold" data-i18n="visit.sundayFeast.timeLabel">Time</h6>
+                    <p class="mb-0" data-i18n="visit.sundayFeast.time">5:00 PM – 8:00 PM (approx)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex">
+                  <div class="me-3">
+                    <i class="fas fa-heart text-warning" style="font-size: 1.5rem;"></i>
+                  </div>
+                  <div>
+                    <h6 class="fw-bold" data-i18n="visit.sundayFeast.costLabel">Cost</h6>
+                    <p class="mb-0" data-i18n="visit.sundayFeast.cost">Free for all</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visitor Guidelines -->
+      <section class="mb-5">
+        <h2 class="fw-bold mb-4">
+          <i class="fas fa-clipboard-list text-warning"></i> <span data-i18n="visit.guidelines.title">Visitor Guidelines</span>
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mb-3">
+                  <i class="fas fa-check-circle text-success"></i> <span data-i18n="visit.dos.title">Do's</span>
+                </h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="fas fa-check text-success"></i> <span data-i18n="visit.dos.item1">Dress modestly and respectfully</span></li>
+                  <li class="mb-2"><i class="fas fa-check text-success"></i> <span data-i18n="visit.dos.item2">Remove shoes before entering temple</span></li>
+                  <li class="mb-2"><i class="fas fa-check text-success"></i> <span data-i18n="visit.dos.item3">Maintain silence in the temple hall</span></li>
+                  <li class="mb-2"><i class="fas fa-check text-success"></i> <span data-i18n="visit.dos.item4">Participate respectfully in kirtan</span></li>
+                  <li><i class="fas fa-check text-success"></i> <span data-i18n="visit.dos.item5">Accept prasadam with gratitude</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title fw-bold mb-3">
+                  <i class="fas fa-ban text-danger"></i> <span data-i18n="visit.donts.title">Don'ts</span>
+                </h5>
+                <ul class="list-unstyled">
+                  <li class="mb-2"><i class="fas fa-times text-danger"></i> <span data-i18n="visit.donts.item1">No non-vegetarian items in temple</span></li>
+                  <li class="mb-2"><i class="fas fa-times text-danger"></i> <span data-i18n="visit.donts.item2">No intoxicants or tobacco</span></li>
+                  <li class="mb-2"><i class="fas fa-times text-danger"></i> <span data-i18n="visit.donts.item3">No mobile phones in loud mode</span></li>
+                  <li class="mb-2"><i class="fas fa-times text-danger"></i> <span data-i18n="visit.donts.item4">Photography only with permission</span></li>
+                  <li><i class="fas fa-times text-danger"></i> <span data-i18n="visit.donts.item5">Do not point feet towards deities</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     <!-- Special Information -->
+<section class="mb-5 rounded-3 p-4" style="background: linear-gradient(135deg, #fff5e6 0%, #ffe8cc 100%); border: 2px solid #FF9933;">
+  <h2 class="fw-bold mb-3">
+    <i class="fas fa-lightbulb text-warning"></i> <span data-i18n="visit.info.title" style="color: #1a1f4d;">Important Information</span>
+  </h2>
+  <div class="row g-3">
+    <div class="col-md-6">
+      <p style="color: #212529; line-height: 1.8;"><strong style="color: #FF6B35;" data-i18n="visit.info.dressCodeLabel">Dress Code:</strong> <span data-i18n="visit.info.dressCodeText">Wear clean, modest clothing. Women should prefer sarees or long dresses. Men should wear dhotis or long pants.</span></p>
+    </div>
+    <div class="col-md-6">
+      <p style="color: #212529; line-height: 1.8;"><strong style="color: #FF6B35;" data-i18n="visit.info.photographyLabel">Photography:</strong> <span data-i18n="visit.info.photographyText">Photography may be restricted during certain aratis. Always ask temple authorities before taking photos.</span></p>
+    </div>
+    <div class="col-md-6">
+      <p style="color: #212529; line-height: 1.8;"><strong style="color: #FF6B35;" data-i18n="visit.info.firstVisitLabel">First Visit:</strong> <span data-i18n="visit.info.firstVisitText">Newcomers are always welcome! Approach any devotee for guidance on darshan etiquette.</span></p>
+    </div>
+    <div class="col-md-6">
+      <p style="color: #212529; line-height: 1.8;"><strong style="color: #FF6B35;" data-i18n="visit.info.prasadamLabel">Prasadam:</strong> <span data-i18n="visit.info.prasadamText">Accept prasadam with your right hand and eat with gratitude. Do not waste or disrespect food.</span></p>
+    </div>
+  </div>
+</section>
+
+        <h2 class="fw-bold mb-3">
+          <i class="fas fa-lightbulb text-warning"></i> <span data-i18n="visit.info.title">Important Information</span>
+        </h2>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <p><strong data-i18n="visit.info.dressCodeLabel">Dress Code:</strong> <span data-i18n="visit.info.dressCodeText">Wear clean, modest clothing. Women should prefer sarees or long dresses. Men should wear dhotis or long pants.</span></p>
+          </div>
+          <div class="col-md-6">
+            <p><strong data-i18n="visit.info.photographyLabel">Photography:</strong> <span data-i18n="visit.info.photographyText">Photography may be restricted during certain aratis. Always ask temple authorities before taking photos.</span></p>
+          </div>
+          <div class="col-md-6">
+            <p><strong data-i18n="visit.info.firstVisitLabel">First Visit:</strong> <span data-i18n="visit.info.firstVisitText">Newcomers are always welcome! Approach any devotee for guidance on darshan etiquette.</span></p>
+          </div>
+          <div class="col-md-6">
+            <p><strong data-i18n="visit.info.prasadamLabel">Prasadam:</strong> <span data-i18n="visit.info.prasadamText">Accept prasadam with your right hand and eat with gratitude. Do not waste or disrespect food.</span></p>
+          </div>
+        </div>
+      </section>
+
+ <!-- CTA -->
+<section class="py-5 rounded-3 text-center" style="background: linear-gradient(135deg, #1a1f4d 0%, #2b3a67 100%);">
+  <h2 class="fw-bold mb-3" style="color: #FFD700; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);" data-i18n="visit.cta.title">Plan Your Visit Today</h2>
+  <p class="mb-4 lead" style="color: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.6); font-size: 1.3rem; font-weight: 400;" data-i18n="visit.cta.text">
+    Experience the spiritual atmosphere and divine darshan at ISKCON Kurnool.
+  </p>
+  <a href="contact.html" class="btn btn-light btn-lg">
+    <i class="fas fa-phone"></i> <span data-i18n="visit.cta.button">Get Directions</span>
+  </a>
+</section>
+
+      
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark text-light">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3" data-i18n="footer.title">ISKCON Kurnool</h5>
+          <p class="mb-1"><strong data-i18n="footer.subtitle">Sri Sri Jagannath Mandir</strong></p>
+          <p class="mb-1" data-i18n="footer.address1">Bhageerathi Complex, 2nd Floor</p>
+          <p class="mb-1" data-i18n="footer.address2">Park Road, Kurnool</p>
+          <p class="mb-3" data-i18n="footer.address3">Andhra Pradesh, India</p>
+          <p class="mb-0"><strong data-i18n="footer.phoneLabel">Phone:</strong> +91 93981 26877</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3" data-i18n="footer.quickLinks">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-decoration-none text-light" data-i18n="nav.home">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="text-decoration-none text-light" data-i18n="nav.about">About</a></li>
+            <li class="mb-2"><a href="programs.html" class="text-decoration-none text-light" data-i18n="nav.programs">Programs</a></li>
+            <li class="mb-2"><a href="donate.html" class="text-decoration-none text-light" data-i18n="nav.donate">Donate</a></li>
+            <li><a href="contact.html" class="text-decoration-none text-light" data-i18n="nav.contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3" data-i18n="footer.connect">Connect With Us</h5>
+          <p class="mb-3" data-i18n="footer.followText">Follow us on social media:</p>
+          <div class="d-flex gap-3">
+            <a href="https://www.youtube.com/@iskconkurnool" class="text-light fs-5" title="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/iskcon_kurnool/" class="text-light fs-5" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/IskconKurnool" class="text-light fs-5" title="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/919398126877" class="text-light fs-5" title="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="bg-light">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="mb-0" data-i18n="footer.copyright">© <span id="year"></span> ISKCON Kurnool – International Society for Krishna Consciousness</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <small data-i18n="footer.dedication">Dedicated to the teachings of His Divine Grace A.C. Bhaktivedanta Swami Prabhupada</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Multilingual Translation Script -->
+  <script>
+    const defaultLang = 'en';
+    let translationsCache = {};
+
+    async function loadTranslations(lang) {
+      try {
+        console.log('Loading language:', lang);
+        
+        if (translationsCache[lang]) {
+          applyTranslations(translationsCache[lang]);
+          localStorage.setItem('lang', lang);
+          console.log('Translations applied from cache:', lang);
+          return;
+        }
+
+        const response = await fetch(`assets/lang/${lang}.json`);
+        
+        if (!response.ok) {
+          console.error(`Failed to load ${lang}.json - Status: ${response.status}`);
+          alert(`Language file not found: assets/lang/${lang}.json`);
+          return;
+        }
+
+        const translations = await response.json();
+        translationsCache[lang] = translations;
+        
+        applyTranslations(translations);
+        localStorage.setItem('lang', lang);
+        
+        console.log(`✅ Successfully loaded and applied ${lang} translations`);
+      } catch (e) {
+        console.error('Translation load error:', e);
+        alert('Error loading translations. Check console for details.');
+      }
+    }
+
+    function applyTranslations(translations) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const text = translations[key];
+        
+        if (!text) {
+          console.warn(`Missing translation key: ${key}`);
+          return;
+        }
+
+        const tag = el.tagName.toLowerCase();
+        if (tag === 'input' || tag === 'textarea') {
+          el.placeholder = text;
+        } else {
+          el.textContent = text;
+        }
+      });
+    }
+
+    function changeLanguage(lang) {
+      console.log('changeLanguage called with:', lang);
+      loadTranslations(lang);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const saved = localStorage.getItem('lang') || defaultLang;
+      console.log('Page loaded. Saved language:', saved);
+      loadTranslations(saved);
+    });
+  </script>
+</body>
+</html>

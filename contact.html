@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | ISKCON Kurnool</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    main {
+      margin-top: 70px;
+      padding-top: 40px !important;
+      padding-bottom: 40px !important;
+    }
+
+    section {
+      margin-bottom: 5rem !important;
+      padding-bottom: 2rem !important;
+    }
+
+    .contact-info-section {
+      clear: both;
+      width: 100%;
+      margin-bottom: 6rem !important;
+      padding-bottom: 3rem !important;
+      border-bottom: 2px solid #e0e0e0;
+    }
+
+    .contact-form-section {
+      clear: both;
+      width: 100%;
+      margin-top: 3rem !important;
+      margin-bottom: 5rem !important;
+      padding-top: 2rem !important;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+      color: #333;
+      margin-top: 0.5rem;
+    }
+
+    .form-control,
+    .form-select {
+      border-radius: 0.375rem;
+      border: 1px solid #dee2e6;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+      border-color: #0d6efd;
+      box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+
+    .card {
+      margin-bottom: 2rem;
+      border-radius: 0.5rem;
+    }
+
+    .card-header {
+      padding: 1.5rem !important;
+      font-weight: 600;
+      border: none !important;
+      color: white !important;
+      border-radius: 0.5rem 0.5rem 0 0 !important;
+    }
+
+    .card-header i {
+      margin-right: 0.75rem;
+    }
+
+    .address-header {
+      background: linear-gradient(135deg, #FF9933, #FFD700) !important;
+    }
+
+    .office-header {
+      background: linear-gradient(135deg, #FF6B35, #FF9933) !important;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+      background-color: #fff;
+    }
+
+    .address-card p {
+      margin-bottom: 0.5rem;
+      line-height: 1.7;
+    }
+
+    .social-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .social-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+    }
+
+    .social-card .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 0.75rem;
+    }
+
+    .accordion-button {
+      padding: 1rem 1.5rem;
+      font-weight: 600;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #f8f9fa;
+      color: #0d6efd;
+    }
+
+    .accordion-item {
+      border: 1px solid #dee2e6;
+      margin-bottom: 1rem;
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+      padding: 3rem 2rem;
+      border-radius: 1rem;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      color: white;
+    }
+
+    .cta-section h2 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .cta-section p {
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .btn-group-gap {
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        margin-top: 80px;
+        padding-top: 20px !important;
+      }
+
+      section {
+        margin-bottom: 3rem !important;
+      }
+
+      .contact-info-section {
+        margin-bottom: 4rem !important;
+      }
+
+      .contact-form-section {
+        margin-top: 2rem !important;
+      }
+
+      .card {
+        margin-bottom: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Mahamantra marquee -->
+  <div class="mantra-bar">
+    <div class="mantra-track">
+      <span>HARE KRISHNA HARE KRISHNA &nbsp; KRISHNA KRISHNA HARE HARE &nbsp; HARE RAMA HARE RAMA &nbsp; RAMA RAMA HARE HARE &nbsp; • &nbsp;</span>
+      <span>HARE KRISHNA HARE KRISHNA &nbsp; KRISHNA KRISHNA HARE HARE &nbsp; HARE RAMA HARE RAMA &nbsp; RAMA RAMA HARE HARE &nbsp; • &nbsp;</span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <img src="assets/images/iskcon_logo.jpeg" alt="ISKCON Kurnool Logo" style="height:60px;width:auto;margin-right:8px;margin-top:4px;display:block;">
+        <span data-i18n="nav.brandName">ISKCON KURNOOL</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav.home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav.about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="deities.html" data-i18n="nav.deities">Deities</a></li>
+          <li class="nav-item"><a class="nav-link" href="visit.html" data-i18n="nav.visit">Visit</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html" data-i18n="nav.programs">Programs</a></li>
+          <li class="nav-item"><a class="nav-link" href="calendar.html" data-i18n="nav.calendar">Calendar</a></li>
+          <li class="nav-item"><a class="nav-link" href="donate.html" data-i18n="nav.donate">Donate</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html" data-i18n="nav.gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+          <!-- Language Buttons (Always Visible - Right Side) -->
+          <div class="d-none d-lg-flex gap-2 ms-auto me-3">
+            <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('en')" title="English" style="font-weight: 600;">EN</button>
+            <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('te')" title="Telugu" style="font-weight: 600;">TE</button>
+            <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('hi')" title="Hindi" style="font-weight: 600;">HI</button>
+          </div>
+          <!-- Language Buttons for Mobile (in hamburger menu) -->
+          <li class="nav-item d-lg-none mt-2">
+            <div class="d-flex gap-2 justify-content-center">
+              <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('en')" style="font-weight: 600;">EN</button>
+              <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('te')" style="font-weight: 600;">TE</button>
+              <button type="button" class="btn btn-sm btn-warning" onclick="changeLanguage('hi')" style="font-weight: 600;">HI</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5">
+    <div class="container">
+      <!-- Page Title -->
+      <section class="mb-5 text-center">
+        <h1 class="fw-bold mb-3" data-i18n="contact.pageTitle">Contact ISKCON Kurnool</h1>
+        <p class="lead text-muted" data-i18n="contact.subtitle">
+          Get in Touch for Darshan, Programs, Donations & Seva Opportunities
+        </p>
+      </section>
+
+      <!-- Contact Info + Map -->
+      <section class="contact-info-section">
+        <div class="row g-4">
+          <!-- Contact Details (Left Column) -->
+          <div class="col-lg-5">
+            <!-- Address Card -->
+            <div class="card border-0 shadow-sm">
+              <div class="card-header address-header">
+                <i class="fas fa-map-location-dot"></i>
+                <span data-i18n="contact.addressHeader">Temple Address</span>
+              </div>
+              <div class="card-body address-card">
+                <p class="mb-2"><strong data-i18n="contact.templeName">ISKCON Kurnool</strong></p>
+                <p class="mb-3"><strong data-i18n="contact.deityName">Sri Sri Jagannath Mandir</strong></p>
+                <p class="mb-3">
+                  <span data-i18n="contact.address1">Bhageerathi Complex, 2nd Floor</span><br>
+                  <span data-i18n="contact.address2">Park Road</span><br>
+                  <span data-i18n="contact.address3">Kurnool, Andhra Pradesh, India</span>
+                </p>
+                <hr>
+                <p class="mb-2">
+                  <i class="fas fa-phone text-warning"></i>
+                  <strong data-i18n="contact.phoneLabel">Phone:</strong><br>
+                  <a href="tel:+919398126877" class="text-decoration-none">+91 93981 26877</a>
+                </p>
+                <p class="mb-0">
+                  <i class="fas fa-envelope text-warning"></i>
+                  <strong data-i18n="contact.emailLabel">Email:</strong><br>
+                  <a href="mailto:info@iskconkurnool.org" class="text-decoration-none">info@iskconkurnool.org</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Office Hours Card -->
+            <div class="card border-0 shadow-sm">
+              <div class="card-header office-header">
+                <i class="fas fa-clock"></i>
+                <span data-i18n="contact.officeHoursHeader">Office Hours</span>
+              </div>
+              <div class="card-body">
+                <p class="mb-3">
+                  <strong data-i18n="contact.mondaySaturday">Monday – Saturday:</strong><br>
+                  <span class="text-muted">9:00 AM – 1:00 PM</span><br>
+                  <span class="text-muted">4:00 PM – 8:00 PM</span>
+                </p>
+                <p class="mb-0">
+                  <strong data-i18n="contact.sunday">Sunday:</strong><br>
+                  <span class="text-muted" data-i18n="contact.sundayTiming">As per Sunday Feast program timing</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map (Right Column) -->
+          <div class="col-lg-7">
+            <h5 class="fw-bold mb-3">
+              <i class="fas fa-location-pin text-warning"></i>
+              <span data-i18n="contact.locationMap">Location Map</span>
+            </h5>
+            <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.5094296187854!2d78.04097517491161!3d15.82980058481552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb5e75916c304f3%3A0x18f16b94e775330d!2sISKCON%20Shri%20Jagannatha%20Swamy%20Temple!5e0!3m2!1sen!2sus!4v1768463720958!5m2!1sen!2sus"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section class="contact-form-section">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <h2 class="fw-bold mb-3 text-center">
+              <i class="fas fa-envelope text-warning"></i>
+              <span data-i18n="contact.formTitle">Send us a Message</span>
+            </h2>
+            <p class="text-center text-muted mb-5" data-i18n="contact.formSubtitle">
+              Have a question or want to discuss something? Fill the form below and we'll get back to you soon.
+            </p>
+
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- ONLY THIS FORM BLOCK IS CHANGED TO USE contact-* IDS -->
+                <form onsubmit="return false;">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="contact-name" class="form-label" data-i18n="contact.form.nameLabel">Your Name</label>
+                      <input type="text" class="form-control" id="contact-name" name="name"
+                             data-i18n-placeholder="contact.form.namePlaceholder"
+                             placeholder="Enter your full name" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="contact-phone" class="form-label" data-i18n="contact.form.phoneLabel">Phone Number</label>
+                      <input type="tel" class="form-control" id="contact-phone" name="phone"
+                             data-i18n-placeholder="contact.form.phonePlaceholder"
+                             placeholder="Enter your mobile number">
+                    </div>
+                  </div>
+
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="contact-email" class="form-label" data-i18n="contact.form.emailLabel">Email Address</label>
+                      <input type="email" class="form-control" id="contact-email" name="_replyto"
+                             data-i18n-placeholder="contact.form.emailPlaceholder"
+                             placeholder="Enter your email" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="contact-subject" class="form-label" data-i18n="contact.form.subjectLabel">Subject</label>
+                      <select class="form-select" id="contact-subject" name="subject" required>
+                        <option value="" data-i18n="contact.form.selectTopic">Select a topic...</option>
+                        <option value="darshan" data-i18n="contact.form.option1">Darshan & Timings</option>
+                        <option value="programs" data-i18n="contact.form.option2">Programs & Classes</option>
+                        <option value="donation" data-i18n="contact.form.option3">Donation Inquiry</option>
+                        <option value="seva" data-i18n="contact.form.option4">Seva Opportunity</option>
+                        <option value="event" data-i18n="contact.form.option5">Event/Group Visit</option>
+                        <option value="general" data-i18n="contact.form.option6">General Query</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label for="contact-message" class="form-label" data-i18n="contact.form.messageLabel">Message</label>
+                      <textarea class="form-control" id="contact-message" name="message" rows="5"
+                                data-i18n-placeholder="contact.form.messagePlaceholder"
+                                placeholder="Write your query or message here..." required></textarea>
+                    </div>
+                  </div>
+
+                  <div class="d-grid gap-2 mt-4">
+                    <button type="button" class="btn btn-primary btn-lg" id="contact-submit">
+                      <i class="fas fa-paper-plane"></i>
+                      <span data-i18n="contact.form.submitButton">Send Message</span>
+                    </button>
+                  </div>
+
+                  <p id="contact-status" class="mt-3"></p>
+                </form>
+                <!-- END of changed form block -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Media Section -->
+      <section class="mb-5">
+        <h2 class="fw-bold mb-2 text-center">
+          <i class="fas fa-share-alt text-warning"></i>
+          <span data-i18n="contact.socialTitle">Connect With Us</span>
+        </h2>
+        <p class="text-center text-muted mb-4" data-i18n="contact.socialSubtitle">
+          Follow ISKCON Kurnool for daily darshan updates, festival announcements and spiritual content.
+        </p>
+        <div class="row g-4">
+          <!-- YouTube -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card text-center border-0 shadow-sm social-card">
+              <div class="card-body">
+                <i class="fab fa-youtube" style="font-size: 2.5rem; color: #FF0000;"></i>
+                <h5 class="card-title fw-bold" data-i18n="contact.youtube.title">YouTube</h5>
+                <p class="text-muted small mb-3" data-i18n="contact.youtube.description">Daily darshan &amp; spiritual talks</p>
+                <a href="https://www.youtube.com/@iskconkurnool"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-outline-primary btn-sm" data-i18n="contact.youtube.button">Subscribe</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Instagram -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card text-center border-0 shadow-sm social-card">
+              <div class="card-body">
+                <i class="fab fa-instagram" style="font-size: 2.5rem; color: #E4405F;"></i>
+                <h5 class="card-title fw-bold" data-i18n="contact.instagram.title">Instagram</h5>
+                <p class="text-muted small mb-3" data-i18n="contact.instagram.description">Photos &amp; event updates</p>
+                <a href="https://www.instagram.com/iskcon_kurnool/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-outline-primary btn-sm" data-i18n="contact.instagram.button">Follow</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Facebook -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card text-center border-0 shadow-sm social-card">
+              <div class="card-body">
+                <i class="fab fa-facebook" style="font-size: 2.5rem; color: #1877F2;"></i>
+                <h5 class="card-title fw-bold" data-i18n="contact.facebook.title">Facebook</h5>
+                <p class="text-muted small mb-3" data-i18n="contact.facebook.description">Community &amp; announcements</p>
+                <a href="https://www.facebook.com/IskconKurnool"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-outline-primary btn-sm" data-i18n="contact.facebook.button">Follow</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card text-center border-0 shadow-sm social-card">
+              <div class="card-body">
+                <i class="fab fa-whatsapp" style="font-size: 2.5rem; color: #25D366;"></i>
+                <h5 class="card-title fw-bold" data-i18n="contact.whatsapp.title">WhatsApp</h5>
+                <p class="text-muted small mb-3" data-i18n="contact.whatsapp.description">Quick messages &amp; updates</p>
+                <a href="https://wa.me/919398126877"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn btn-outline-primary btn-sm" data-i18n="contact.whatsapp.button">Chat</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="mb-5">
+        <h2 class="fw-bold mb-4 text-center">
+          <i class="fas fa-question-circle text-warning"></i>
+          <span data-i18n="contact.faqTitle">Frequently Asked Questions</span>
+        </h2>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item border-0 shadow-sm mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" data-i18n="contact.faq1.question">
+                What are the temple timings?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" data-i18n="contact.faq1.answer">
+                Daily darshan and arati are available from 5:00 AM to 9:00 PM. Please see the <a href="visit.html" class="text-decoration-none">Visit page</a> for detailed timings of each arati.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 shadow-sm mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" data-i18n="contact.faq2.question">
+                Can I visit the temple for the first time?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" data-i18n="contact.faq2.answer">
+                Absolutely! All are welcome regardless of background or experience. Approach any devotee for guidance on temple etiquette and darshan.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 shadow-sm mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" data-i18n="contact.faq3.question">
+                Is there a dress code?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" data-i18n="contact.faq3.answer">
+                Yes, please wear clean and modest clothing. Women should prefer sarees or long dresses. Men should wear dhotis or long pants. This shows respect to the deity and the spiritual space.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 shadow-sm mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" data-i18n="contact.faq4.question">
+                How do I make a donation?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" data-i18n="contact.faq4.answer">
+                You can donate through bank transfer, UPI, or in person at the temple. Visit the <a href="donate.html" class="text-decoration-none">Donate page</a> for details and confirmed banking information.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 shadow-sm mb-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" data-i18n="contact.faq5.question">
+                Can I organize a group visit or program?
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" data-i18n="contact.faq5.answer">
+                Yes! Contact the temple office with details about your group size and preferred date/time. We can arrange special programs or group darshan sessions.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item border-0 shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" data-i18n="contact.faq6.question">
+                What programs are available?
+              </button>
+            </h2>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" data-i18n="contact.faq6.answer">
+                We conduct daily classes, Sunday Feast, youth programs, family satsangs, and festival celebrations. Check the <a href="programs.html" class="text-decoration-none">Programs page</a> for a complete list.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action -->
+      <section class="cta-section text-center">
+        <h2 class="fw-bold mb-3" data-i18n="contact.cta.title">Ready to Connect?</h2>
+        <p class="mb-4 lead" data-i18n="contact.cta.text">
+          Reach out via phone, email, or visit us in person. We look forward to welcoming you to our spiritual family.
+        </p>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+          <a href="tel:+919398126877" class="btn btn-light btn-lg">
+            <i class="fas fa-phone"></i> <span data-i18n="contact.cta.callButton">Call Us</span>
+          </a>
+          <a href="visit.html" class="btn btn-outline-light btn-lg">
+            <i class="fas fa-map-location-dot"></i> <span data-i18n="contact.cta.directionsButton">Get Directions</span>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark text-light">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3" data-i18n="footer.title">ISKCON Kurnool</h5>
+          <p class="mb-1"><strong data-i18n="footer.subtitle">Sri Sri Jagannath Mandir</strong></p>
+          <p class="mb-1" data-i18n="footer.address1">Bhageerathi Complex, 2nd Floor</p>
+          <p class="mb-1" data-i18n="footer.address2">Park Road, Kurnool</p>
+          <p class="mb-3" data-i18n="footer.address3">Andhra Pradesh, India</p>
+          <p class="mb-0"><strong data-i18n="footer.phoneLabel">Phone:</strong> +91 93981 26877</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3" data-i18n="footer.quickLinks">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-decoration-none text-light" data-i18n="nav.home">Home</a></li>
+            <li class="mb-2"><a href="about.html" class="text-decoration-none text-light" data-i18n="nav.about">About</a></li>
+            <li class="mb-2"><a href="visit.html" class="text-decoration-none text-light" data-i18n="footer.link1">Visit &amp; Timings</a></li>
+            <li class="mb-2"><a href="programs.html" class="text-decoration-none text-light" data-i18n="nav.programs">Programs</a></li>
+            <li><a href="donate.html" class="text-decoration-none text-light" data-i18n="nav.donate">Donate</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3" data-i18n="footer.connect">Connect With Us</h5>
+          <p class="mb-3" data-i18n="footer.followText">Follow us on social media:</p>
+          <div class="d-flex gap-3">
+            <a href="https://www.youtube.com/@iskconkurnool" class="text-light fs-5" title="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/iskcon_kurnool/" class="text-light fs-5" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/IskconKurnool" class="text-light fs-5" title="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/919398126877" class="text-light fs-5" title="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="bg-light">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="mb-0" data-i18n="footer.copyright">
+            © <span id="year"></span> ISKCON Kurnool – International Society for Krishna Consciousness
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <small data-i18n="footer.dedication">
+            Dedicated to the teachings of His Divine Grace A.C. Bhaktivedanta Swami Prabhupada
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Multilingual Translation Script -->
+  <script>
+    const defaultLang = 'en';
+    let translationsCache = {};
+
+    async function loadTranslations(lang) {
+      try {
+        console.log('Loading language:', lang);
+
+        if (translationsCache[lang]) {
+          applyTranslations(translationsCache[lang]);
+          localStorage.setItem('lang', lang);
+          console.log('Translations applied from cache:', lang);
+          return;
+        }
+
+        const response = await fetch(`assets/lang/${lang}.json`);
+
+        if (!response.ok) {
+          console.error(`Failed to load ${lang}.json - Status: ${response.status}`);
+          alert(`Language file not found: assets/lang/${lang}.json`);
+          return;
+        }
+
+        const translations = await response.json();
+        translationsCache[lang] = translations;
+
+        applyTranslations(translations);
+        localStorage.setItem('lang', lang);
+
+        console.log(`✅ Successfully loaded and applied ${lang} translations`);
+      } catch (e) {
+        console.error('Translation load error:', e);
+        alert('Error loading translations. Check console for details.');
+      }
+    }
+
+    function applyTranslations(translations) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const text = translations[key];
+
+        if (!text) {
+          console.warn(`Missing translation key: ${key}`);
+          return;
+        }
+
+        const tag = el.tagName.toLowerCase();
+        if (tag === 'input' || tag === 'textarea') {
+          el.placeholder = text;
+        } else {
+          el.textContent = text;
+        }
+      });
+
+      // Handle placeholders with special attribute
+      document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+        const key = el.getAttribute('data-i18n-placeholder');
+        const text = translations[key];
+        if (text) {
+          el.placeholder = text;
+        }
+      });
+
+      // Handle select options
+      document.querySelectorAll('option[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const text = translations[key];
+        if (text) {
+          el.textContent = text;
+        }
+      });
+    }
+
+    function changeLanguage(lang) {
+      console.log('changeLanguage called with:', lang);
+      loadTranslations(lang);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const saved = localStorage.getItem('lang') || defaultLang;
+      console.log('Page loaded. Saved language:', saved);
+      loadTranslations(saved);
+    });
+  </script>
+
+  <script>
+    const CONTACT_API = "http://127.0.0.1:8000/contact";
+
+    const nameEl = document.getElementById("contact-name");
+    const phoneEl = document.getElementById("contact-phone");
+    const emailEl = document.getElementById("contact-email");
+    const subjectEl = document.getElementById("contact-subject");
+    const messageEl = document.getElementById("contact-message");
+    const submitBtn = document.getElementById("contact-submit");
+    const statusEl = document.getElementById("contact-status");
+
+    submitBtn.addEventListener("click", async () => {
+      const payload = {
+        name: nameEl.value.trim(),
+        phone: phoneEl.value.trim(),
+        email: emailEl.value.trim(),
+        subject: subjectEl.value.trim(),
+        message: messageEl.value.trim(),
+      };
+
+      if (!payload.name || !payload.email || !payload.message) {
+        statusEl.textContent = "Please fill in name, email and message.";
+        statusEl.style.color = "red";
+        return;
+      }
+
+      statusEl.textContent = "Sending...";
+      statusEl.style.color = "black";
+
+      try {
+        const resp = await fetch(CONTACT_API, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+
+        const data = await resp.json();
+        if (!resp.ok || !data.ok) {
+          throw new Error(data.detail || "Server error");
+        }
+
+        statusEl.textContent = data.detail;
+        statusEl.style.color = "green";
+
+        // Optional: clear form
+        nameEl.value = "";
+        phoneEl.value = "";
+        emailEl.value = "";
+        subjectEl.value = "";
+        messageEl.value = "";
+      } catch (err) {
+        console.error(err);
+        statusEl.textContent = "Sorry, message could not be sent. Please try again later.";
+        statusEl.style.color = "red";
+      }
+    });
+  </script>
+
+</body>
+</html>
